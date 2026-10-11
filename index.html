@@ -182,7 +182,7 @@ function order(s){
 }
 document.getElementById('saveNumber').addEventListener('click',()=>{
  const n=document.getElementById('waNumber').value.replace(/\\D/g,'');
- if(n.length<10){alert('দেশের কোডসহ সঠিক WhatsApp নম্বর লিখুন।');return}
+ if(n.length<10){alert('দেশের কোডসহ সঠিক WhatsApp নম্বর return।');return}
  localStorage.setItem('bd_smart_smm_whatsapp',n);alert('WhatsApp নম্বর এই ডিভাইসে সেভ হয়েছে।');
 });
 document.getElementById('waNumber').value=getWhatsApp();
